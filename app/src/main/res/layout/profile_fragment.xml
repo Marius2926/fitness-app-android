@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/profile_fragment_tv_about_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile_fragment_title_about_you"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_personal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_fragment_tv_about_you"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/profile_fragment_tv_personal_information"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/profile_fragment_btn_edit"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_about_you"
+                android:layout_toRightOf="@id/profile_fragment_tv_personal_info"
+                android:layout_toEndOf="@id/profile_fragment_tv_personal_info"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:tooltipText="@string/profile_fragment_btn_edit">
+
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_personal_info"
+                android:text="@string/profile_fragment_tv_email"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_personal_info"
+                android:layout_toRightOf="@+id/profile_fragment_tv_email"
+                android:layout_toEndOf="@id/profile_fragment_tv_email"
+                android:textSize="15dp">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_email"
+                android:text="@string/profile_fragment_tv_name"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_email"
+                android:layout_toRightOf="@+id/profile_fragment_tv_name"
+                android:layout_toEndOf="@id/profile_fragment_tv_name"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_name"
+                android:text="@string/profile_fragment_tv_height"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_height_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_name"
+                android:layout_toRightOf="@+id/profile_fragment_tv_height"
+                android:layout_toEndOf="@id/profile_fragment_tv_height"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_height"
+                android:text="@string/profile_fragment_tv_weight"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_weight_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_height"
+                android:layout_toRightOf="@+id/profile_fragment_tv_name"
+                android:layout_toEndOf="@id/profile_fragment_tv_name"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_activity_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_weight"
+                android:text="@string/profile_fragment_tv_activity_level"
+                android:textSize="15dp">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/profile_fragment_spn_activity_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_weight"
+                android:layout_toRightOf="@id/profile_fragment_tv_activity_level"
+                android:layout_toEndOf="@id/profile_fragment_tv_activity_level">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_imc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_activity_level"
+                android:text="@string/profile_fragment_tv_imc"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_imc_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_activity_level"
+                android:layout_toRightOf="@+id/profile_fragment_tv_imc"
+                android:layout_toEndOf="@+id/profile_fragment_tv_imc"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_calories_nr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_imc"
+                android:text="@string/profile_fragment_number_of_calories"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_calories_nr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/profile_fragment_tv_imc"
+                android:layout_toRightOf="@id/profile_fragment_tv_calories_nr"
+                android:layout_toEndOf="@+id/profile_fragment_tv_calories_nr"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_achievements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_calories_nr"
+                android:text="@string/profile_fragment_tv_your_achievements"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/profile_fragment_btn_challenges_report"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_fragment_tv_achievements"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/profile_fragment_btn_view_challenge_report"
+                android:textColor="@color/colorTitle"
+                android:backgroundTint="@color/colorAccent">
+            </Button>
+
+            <Button
+                android:id="@+id/profile_fragment_btn_progress_report"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_fragment_tv_achievements"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toEndOf="@id/profile_fragment_btn_challenges_report"
+                android:layout_toRightOf="@id/profile_fragment_btn_challenges_report"
+                android:text="@string/profile_fragment_btn_view_progress_report"
+                android:textColor="@color/colorTitle"
+                android:backgroundTint="@color/colorAccent">
+            </Button>
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_fragment_btn_challenges_report"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/profile_fragment_tv_account"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/profile_fragment_btn_delete_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/profile_fragment_tv_account"
+                android:text="@string/profile_fragment_btn_delete_account">
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

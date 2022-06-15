@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/exercise_tv_it_s_workouts_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_tv_it_s_workouts_time"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/exercise_tv_workouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_tv_video_workouts_title"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/exercise_tv_it_s_workouts_time">
+            </TextView>
+
+<!--            <ListView-->
+<!--                android:id="@+id/exercise_lv_gifs"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/exercise_tv_workouts"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginRight="20dp">-->
+<!--            </ListView>-->
+
+            <ImageView
+                android:id="@+id/exercise_iv_gif1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exercise_tv_workouts"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/exercise_iv_gif2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_iv_gif1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/exercise_tv_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_tv_challenges_title"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/exercise_iv_gif2">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/exercise_iv_squats_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_tv_challenges"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/exercise_iv_abs_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_tv_challenges"
+                android:layout_toRightOf="@+id/exercise_iv_squats_challenge"
+                android:layout_toEndOf="@id/exercise_iv_squats_challenge"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/exercise_linear_layout_img_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_iv_squats_challenge"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/exercise_btn_upload_picture"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/exercise_btn_upload_a_challenge"
+                    android:textColor="@color/colorTitle">
+                </Button>
+
+                <ImageView
+                    android:id="@+id/exercise_iv_uploaded_image"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp">
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exercise_tv_gym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_linear_layout_img_upload"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/exercise_tv_gym"
+                android:textColor="@color/black"
+                android:textSize="17dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/exercise_btn_maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exercise_tv_gym"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/exercise_btn_gyms_locations"
+                android:backgroundTint="@color/waterProcessBarProgressColor"
+                android:textColor="@color/colorTitle">
+            </Button>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

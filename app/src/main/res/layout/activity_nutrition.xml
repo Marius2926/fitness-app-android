@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionActivity">
+
+    <LinearLayout
+        android:id="@+id/nutrition_ll_breakfast_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/nutrition_bt_add_breakfast"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/sandwich"
+            android:text="@string/nutrition_bt_add_breakfast">
+        </Button>
+
+        <Button
+            android:id="@+id/nutrition_bt_add_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrition_bt_add_lunch"
+            android:drawableBottom="@drawable/lunch"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nutrition_linear_layout_add_snacks_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/nutrition_ll_breakfast_lunch">
+
+        <Button
+            android:id="@+id/nutrition_bt_add_snacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nutrition_bt_add_snacks"
+            android:drawableBottom="@drawable/snacks_emoji"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/nutrition_bt_add_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nutrition_bt_add_dinner"
+            android:drawableBottom="@drawable/salad_emoji"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp">
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nutrition_tv_aliments_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nutrition_tv_aliments_list"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/nutrition_linear_layout_add_snacks_dinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/nutrition_linear_layout_headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="3"
+        android:background="@color/personalInfoBackground"
+        android:layout_below="@+id/nutrition_tv_aliments_list">
+
+        <TextView
+            android:id="@+id/aliments_list_tv_product"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/aliments_list_tv_product"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/aliments_list_tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/aliments_list_tv_quantity"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/aliments_list_tv_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aliments_list_tv_calories"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/black">
+        </TextView>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/nutrition_lv_list_of__today_aliments"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/nutrition_linear_layout_headers"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/yellowBackground">
+    </ListView>
+
+    <TextView
+        android:id="@+id/nutrition_tv_empty_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nutrition_no_aliments_added_yet"
+        android:layout_below="@id/nutrition_linear_layout_headers"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp">
+    </TextView>
+
+</RelativeLayout>

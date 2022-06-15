@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitle"
+    tools:context=".HydrationActivity">
+
+    <TextView
+        android:id="@+id/hydration_tv_add_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/hydration_activity_tv_add_water"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+    </TextView>
+
+    <ImageView
+        android:layout_width="114dp"
+        android:layout_height="238dp"
+        android:layout_below="@+id/hydration_tv_add_water"
+        android:layout_marginTop="-32dp"
+        android:layout_marginRight="-3dp"
+        android:layout_toLeftOf="@id/hydration_ib_glass"
+        android:src="@drawable/press_me" />
+
+    <Button
+        android:id="@+id/hydration_ib_glass"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hydration_tv_add_water"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button">
+    </Button>
+
+    <TextView
+        android:id="@+id/hydration_tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hydration_ib_glass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/hydration_tv_quantity"
+        android:textStyle="bold">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/hydrate_pb_water"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/hydration_ib_glass"
+        android:progressDrawable="@drawable/water_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/hydration_tv_progress_level"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hydration_ib_glass"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black">
+    </TextView>
+
+
+</RelativeLayout>

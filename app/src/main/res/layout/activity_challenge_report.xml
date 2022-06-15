@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChallengeReportActivity">
+
+    <TextView
+        android:id="@+id/challenge_report_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/challenge_report_tv_title"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/challenge_report_tv_paragraph_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/challenge_report_tv_title"
+        android:text="@string/challenge_report_tv_paragraph_1"
+       android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp">
+    </TextView>
+
+    <ListView
+        android:id="@+id/challenge_report_lv_challenges"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/challenge_report_tv_paragraph_1"
+        android:background="@color/yellowBackground">
+    </ListView>
+
+    <Button
+        android:id="@+id/challenge_report_btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/challenge_report_lv_challenges"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/challenge_report_btn_download"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorTitle">
+    </Button>
+
+    <Button
+        android:id="@+id/challenge_report_btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challenge_report_btn_download"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginBottom="86dp"
+        android:text="Share file" />
+
+</RelativeLayout>

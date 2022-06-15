@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorPrimary">
+
+    <TextView
+        android:id="@+id/diary_title_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diary_fragment_today_s_summary_title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_calories_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diary_title_today"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/diary_fragment_calories_title"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/diary_linearLayout_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_calories_title"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/layoutBackgroundColor">
+
+        <LinearLayout
+            android:id="@+id/diary_linear_layout_eaten_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/diary_tv_eaten_calories_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/dyary_tv_zero_calories_default">
+            </TextView>
+
+            <TextView
+                android:id="@+id/diary_tv_eaten_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diary_fragment_tv_eaten_calories"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/diary_relative_layout_remaining_calories"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <ProgressBar
+                android:id="@+id/diary_progress_bar_calories"
+                android:layout_width="78dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                style="?android:progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/circle_progress_bar">
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/diary_fragment_tv_remaining_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <TextView
+                android:id="@+id/diary_fragment_tv_remaining_calories_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diary_fragment_tv_remaining_calories"
+                android:layout_centerHorizontal="true"
+                android:text="@string/diary_tv_remaining_cal"
+                android:textSize="10dp">
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/diary_linear_layout_goal_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/diary_tv_goal_calories_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/diary_tv_goal_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diary_fragment_tv_goal_calories">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hydration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_linearLayout_calories"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/diary_tv_hydration"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        >
+
+    </TextView>
+    <ProgressBar
+        android:id="@+id/diary_progress_bar_water"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv_hydration_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:progressDrawable="@drawable/water_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/diary_fragment_tv_progress_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hydration_title"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_add_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_progress_bar_water"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/diary_tv_add_your_activity"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/diary_fragment_linear_layout_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_add_activity_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/diary_fragment_ib_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/red_apple"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/diary_fragment_ib_runner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/runner"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/diary_fragment_ib_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/water"
+            android:background="@android:color/transparent">
+        </ImageButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diary_fragment_tv_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_fragment_linear_layout_activity_btn"
+        android:text="@string/diary_fragment_tv_nutrition"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/diary_fragment_tv_runner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_fragment_linear_layout_activity_btn"
+        android:layout_toRightOf="@+id/diary_fragment_tv_apple"
+        android:text="@string/diary_fragment_tv_exercise"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/diary_fragment_tv_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diary_fragment_linear_layout_activity_btn"
+        android:layout_toRightOf="@+id/diary_fragment_tv_runner"
+        android:text="@string/diary_fragment_tv_hydrate"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp">
+    </TextView>
+
+</RelativeLayout>
+

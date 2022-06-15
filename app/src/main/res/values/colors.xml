@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8FC33A</color>
+    <color name="colorPrimaryDark">#76AD3C</color>
+    <color name="layoutBackgroundColor">#BFEC87</color>
+
+    <color name="colorAccent">#D81B60</color>
+    <color name="gray">#8F8C8E</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="backgroundColorPrimary">#F8F8F2</color>
+    <color name="waterProcessBarBackground">#8ED9E4</color>
+    <color name="waterProcessBarProgressColor">#03A9F4</color>
+    <color name="personalInfoBackground">#FFF4B7</color>
+    <color name="yellowBackground">#FEFBE8</color>
+    <color name="blue">#2E44C0</color>
+    <color name="black">#070606</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteBabyPowder">#FCFCFF</color>
+</resources>

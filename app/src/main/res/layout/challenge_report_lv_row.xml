@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/challenge_lv_row_tv_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/challenge_lv_row_tv_congratulations"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/challenge_lv_row_tv_eaten_drunk_or_smoked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/challenge_lv_row_tv_congratulations"
+        android:layout_toEndOf="@id/challenge_lv_row_tv_congratulations"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/black">
+    </TextView>
+    <TextView
+        android:id="@+id/challenge_tv_row_time_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/challenge_lv_row_tv_eaten_drunk_or_smoked">
+
+    </TextView>
+</RelativeLayout>
